@@ -1,0 +1,38 @@
+<header>
+    <div class="container">
+        
+        <a href="#"  class="logo">The Food Express .....<mat-icon id="moto">motorcycle</mat-icon>&nbsp;</a>
+        <!-- <div class="form-group">
+            <input type="text" class="form-control" placeholder="search food">
+        </div>
+        <span class="search"><mat-icon>search</mat-icon></span> -->
+        <nav>
+            <ul>
+                <li>
+                   
+                    <a routerLink="" *ngIf="!authService.isAuthenticatedUser()"><mat-icon>home</mat-icon></a> 
+                    <a routerLink="/restaurant" *ngIf="authService.isAuthenticatedUser()"><mat-icon>home</mat-icon></a>
+
+                    <a routerLink="/signin" *ngIf="!authService.isAuthenticatedUser()"> <!-- Show only if user is not authenticated -->
+                        <mat-icon>login</mat-icon>
+                      </a>
+                      
+                      <a (click)="logout()" *ngIf="authService.isAuthenticatedUser()"> <!-- Show only if user is authenticated -->
+                        <mat-icon>logout</mat-icon>
+                        <span>{{ authService.getUserName() }}</span>
+                      </a>
+                      
+                      
+                    <!-- <a routerLink="/signin"><mat-icon >login</mat-icon></a>  -->
+                    
+                    
+           <!-- <a href=""><mat-icon>settings</mat-icon></a> -->
+           <!-- <a href=""><mat-icon>person</mat-icon></a> -->
+                    <a routerLink="/cart"><mat-icon>shopping_cart</mat-icon>
+                    <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+

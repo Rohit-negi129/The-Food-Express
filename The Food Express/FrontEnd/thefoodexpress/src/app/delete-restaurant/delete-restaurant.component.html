@@ -1,0 +1,34 @@
+<!-- <div class="delete-restaurant-container">
+    <label for="restaurantId">Enter Restaurant ID:</label>
+    <input type="text" id="restaurantId" [(ngModel)]="restaurantId" />
+    <button (click)="deleteRestaurant()">Delete Restaurant</button>
+    <button id="click" type="submit" routerLink="/admin">Main Menu</button>
+  </div> -->
+
+
+<div id="box">
+   
+
+    <div id="add-restaurant">
+        
+        <h2>Delete Restaurant</h2><hr><br>
+        
+        <h3>
+          <form [formGroup]="check" action="">
+            <mat-form-field appearance="fill">
+              <mat-label>Restaurant UniqueId</mat-label>
+              <input matInput type="text" formControlName="restaurantId" >
+              <mat-hint *ngIf="!restaurantId?.valid&& restaurantId?.dirty">Restaurant UniqueId</mat-hint>
+              </mat-form-field><br>
+
+    
+                    
+                        <button type="submit" [disabled]="check.invalid" (click)="deleteRestaurant()">delete-restaurant</button>
+                        <div>
+                            <button id="click" type="submit" routerLink="/admin">Main Menu</button>
+                        </div>
+          </form>
+        </h3>
+      </div>
+    </div>
+    

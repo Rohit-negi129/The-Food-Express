@@ -1,0 +1,57 @@
+<div id="background">
+<div id="top">
+<div class="registration-form">
+    <h2>Registration</h2>
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" placeholder="Enter your First Name"formControlName="firstName" />
+        <div id="err" *ngIf="userForm.get('firstName')?.hasError('required') && userForm.get('firstName')?.touched">
+          First Name is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" placeholder="Enter your Last Name"formControlName="lastName" />
+        <div id="err" *ngIf="userForm.get('lastName')?.hasError('required') && userForm.get('lastName')?.touched">
+          Last Name is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your Email"formControlName="userEmail" />
+        <div id="err" *ngIf="userForm.get('userEmail')?.hasError('required') && userForm.get('userEmail')?.touched">
+          Email is required.
+        </div>
+        <div id="err" *ngIf="userForm.get('userEmail')?.hasError('pattern') && userForm.get('userEmail')?.touched">
+          Please enter a valid email address.
+        </div>
+      </div>
+      <div class="form-group">
+        <span>Password</span>
+        <input type="password" placeholder="Enter your Password" formControlName="password">
+        <div id="err" *ngIf="password?.errors?.['required'] && password?.dirty">
+            Password is required
+        </div>
+        <div id="err" *ngIf="password?.errors?.['pattern']">
+            <span color="red"> should have min 7 letter password, with at least a symbol, upper and lower case letters
+                and a number.</span>
+        </div>
+    </div>
+    
+      <button type="submit" [disabled]="userForm.invalid">Register</button>
+      <br>
+      <span>
+      <p>Already have account ? <p>
+        <button id="click" type="submit" routerLink="/signin">Login here</button>
+    </span>
+    </form>
+  </div>
+</div>
+</div> 
+  
+  
+  
+    
+  
+  

@@ -1,0 +1,50 @@
+
+<div id="box">
+   
+
+<div id="add-restaurant">
+    
+    <h2>Add Restaurant</h2><hr><br>
+    
+    <h3>
+      <form [formGroup]="registration" action="">
+        <mat-form-field appearance="fill">
+          <mat-label>Restaurant UniqueId</mat-label>
+          <input matInput type="text" formControlName="restaurantId" >
+          <mat-hint *ngIf="!restaurantId?.valid&& restaurantId?.dirty">Restaurant UniqueId</mat-hint>
+          </mat-form-field><br>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Restaurant Name</mat-label>
+            <input matInput type="text" formControlName="restaurantName" >
+            <mat-hint *ngIf="!restaurantName?.valid&& restaurantName?.dirty">Invalid Restaurant Name</mat-hint>
+            </mat-form-field><br>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Description</mat-label>
+            <input matInput type="text" formControlName="description" >
+            <mat-hint *ngIf="!description?.valid&& description?.dirty">Invalid Description</mat-hint>
+            </mat-form-field>&nbsp;
+            <br>
+
+            <mat-form-field appearance="fill">
+              <mat-label>Restaurant Image</mat-label>
+              <input matInput type="text" formControlName="restaurantImage">
+              <mat-hint *ngIf="!restaurantImage?.valid&& restaurantImage?.dirty">Invalid Restaurant Image</mat-hint>
+              </mat-form-field><br>
+
+              <mat-form-field appearance="fill">
+                <mat-label>Location</mat-label>
+                <input matInput type="text" formControlName="location">
+                <mat-hint *ngIf="!location?.valid&& location?.dirty">Invalid location</mat-hint>
+                </mat-form-field><br>
+
+                
+                    <button type="submit" [disabled]="registration.invalid" (click)="submit()">Add Restaurant</button>
+                    <div>
+                        <button id="click" type="submit" routerLink="/admin">Main Menu</button>
+                    </div>
+      </form>
+    </h3>
+  </div>
+</div>

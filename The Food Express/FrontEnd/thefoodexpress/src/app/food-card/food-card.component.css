@@ -1,0 +1,65 @@
+.foods{
+    width: 320px;
+    height: 400px;
+    margin: 20px;
+    display:inline-flex;
+    background-color: rgb(148, 194, 79);
+    color:rgb(45, 31, 31);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px;
+}
+#title{
+    font-size:large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom:solid 2px #060707;
+}
+
+#img{
+    margin: auto;
+    border-radius: 5px;
+
+    height: 170px;
+    width: 300px;
+ }
+.content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: black;
+    
+
+}
+.foods:hover{
+    cursor: pointer;
+    background-color: rgb(194, 208, 65);
+    
+}
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+/* button{
+   
+    background-color:rgb(197, 142, 187);
+    border: 0.5px solid rgb(88, 65, 84);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    
+}
+button:hover{
+    cursor: pointer;
+    zoom: 120%;
+   
+} */
+
+mat-card-header{
+    margin-top: 0;
+}

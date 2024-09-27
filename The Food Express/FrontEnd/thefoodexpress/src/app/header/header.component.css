@@ -1,0 +1,56 @@
+header{
+    background-color: rgb(165, 219, 140);
+    padding: 0;
+    border-bottom: 1px solid black;
+}
+a{
+    color: rgb(78, 117, 39);
+    text-decoration: none;
+}
+a:hover{
+    color:black;
+    background-color: #e7c429aa;
+
+}
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+a.logo{
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 1em;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+}
+nav ul li a{
+    padding: 1em;
+    display: inline-block;
+    font-size: 30px;
+}
+#moto{
+    position: absolute;
+    z-index: 10;
+    left: 26.5%;
+    bottom: 93%;
+    height: max-content;
+    width: max-content;
+    font-size: xx-large;
+} 
+.form-control{
+    border-radius: 3px;
+    width: 500px;
+    margin-left: -50px;
+    margin-top: 25px;
+}
+.search{
+    position: absolute;
+    z-index: 10;
+    right: 37%;
+    top: 5%;
+    color: rgb(78, 117, 39);
+}
+    

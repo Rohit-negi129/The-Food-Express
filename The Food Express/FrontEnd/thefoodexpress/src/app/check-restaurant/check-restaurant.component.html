@@ -1,0 +1,28 @@
+
+
+<div id="box">
+   
+
+    <div id="add-restaurant">
+        
+        <h2>check Restaurant</h2><hr><br>
+        
+        <h3>
+          <form [formGroup]="check" action="">
+            <mat-form-field appearance="fill">
+              <mat-label>Restaurant UniqueId</mat-label>
+              <input matInput type="text" formControlName="restaurantId" >
+              <mat-hint *ngIf="!restaurantId?.valid&& restaurantId?.dirty">Restaurant UniqueId</mat-hint>
+              </mat-form-field><br>
+
+    
+                    
+                        <button type="submit" [disabled]="check.invalid" (click)="submit()">Add Food</button>
+                        <div>
+                            <button id="click" type="submit" routerLink="/admin">Main Menu</button>
+                        </div>
+          </form>
+        </h3>
+      </div>
+    </div>
+    

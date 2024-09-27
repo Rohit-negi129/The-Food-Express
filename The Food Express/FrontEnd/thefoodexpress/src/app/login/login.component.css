@@ -1,0 +1,123 @@
+#container{
+    margin-top: 50px;
+}
+#card{
+    background-color: rgb(208, 244, 191);
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid rgb(14, 14, 14);
+}
+
+#signIn{
+    margin:48px;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+}
+.form-group {
+    margin-bottom: 20px;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: rgb(219, 223, 177);
+  }
+  
+label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+#err{
+    color:red
+  }
+  button{
+    background-color:rgb(50, 114, 232);
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+}
+#click{
+    background-color: rgb(86, 153, 155);
+    width: 120;
+    height: auto;
+    border-radius: 5px;
+    
+}
+button:hover{
+    background-color: aliceblue;
+    color: black;
+    transform: 1.2;
+}
+
+/* img{
+    height:60px;
+    width: 70px;
+
+} 
+#icons{
+    display: flex;
+    justify-content:center;
+    margin-top:-60px;
+    
+    
+}
+#header{
+    background-color: black;
+    background-size: cover;
+    padding-bottom:25px;
+}
+#logo{
+    color:#DAA520;
+    text-transform: uppercase;
+    font-family: "Sofia", sans-serif;
+    padding-top: 10px;
+    font-size: 30px; 
+}
+a{
+    padding-right: 8px;
+    color:#DAA520;
+}
+a:hover{
+    color:blue;
+}
+#container{
+    height:100%;
+    width:100%;
+   background-color: rgb(191, 182, 182);
+   background-size: cover;
+
+}
+
+/* #card{
+    background-image: url(../../assets/HeaderImage/login.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 440px;
+    display:inline-block;
+    text-align: center;
+    margin-left: 480px;
+    box-shadow: 10px 10px #DAA520 ;
+} */
+/* #signIn{
+    margin:48px;
+    font-weight: bolder;
+    font-size: xx-large;
+
+}
+button{
+    background-color:rgb(50, 114, 232);
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+}
+mat-form-field{
+    margin-bottom: 10px;
+} */ 

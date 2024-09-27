@@ -1,0 +1,31 @@
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  #delete-restaurant {
+    background-color: rgb(208, 244, 191);
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid rgb(14, 14, 14);
+  
+}
+#box{
+    margin-top: 50px;
+}
+label{
+    margin: 20px;
+}
+h1{
+    text-align: center;
+    
+}

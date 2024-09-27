@@ -1,0 +1,42 @@
+#add-restaurant {
+    background-color: rgb(208, 244, 191);
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid rgb(14, 14, 14);
+  
+}
+#box{
+    margin-top: 50px;
+}
+
+h2{
+    color: rgb(52, 114, 172);
+    font-weight: bold;
+    font-size: xx-large;
+  }
+  
+
+mat-hint{
+    color: red;
+}
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+
+/* button{
+    background-color: rgb(49, 92, 11);
+    color: black;
+    border-radius: 5px;
+} */

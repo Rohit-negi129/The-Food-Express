@@ -1,0 +1,39 @@
+.restaurant{
+    width: 300px;
+    height: 450px;
+    margin: 30px;
+    display:inline-flex;
+    color:rgb(148, 220, 167);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+#img{
+    margin: auto;
+    height: 250px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 5px;
+ }
+.content{
+    margin-top: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    font-size: 20px;
+    color: rgb(6, 6, 6);
+
+}
+.restaurant:hover{
+    cursor: pointer;
+    zoom: 100%;
+    background-color:#2b431ce3;
+}
+.card{
+    background-color:#90d06be3;
+    color: rgb(35, 48, 22);
+   
+}
+mat-card-title{
+    font-weight: bolder;
+    font-size: 200%;
+}
